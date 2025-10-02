@@ -1,9 +1,11 @@
 package edu.estatuas;
 import java.util.List;
-
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import dev.cristinagom.utils.Utils;
 
 public class Pokemon {
-
+    @JsonProperty("")
     private int id;
     private String name;
     private List<String> types;
