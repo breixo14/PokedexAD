@@ -2,23 +2,35 @@ package edu.estatuas;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import dev.cristinagom.utils.Utils;
 
 public class Pokemon {
-    @JsonProperty("")
+    @JsonProperty("id")
     private int id;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("types")
     private List<String> types;
+    @JsonProperty("ability")
     private String ability;
+    @JsonProperty("exp")
     private long exp;
+    @JsonProperty("stats")
     private Stats stats;
+    @JsonProperty("evolutions")
     private List<Evolution> evolutions;
+    @JsonProperty("genderRatio")
     private GenderRatio genderRatio;
+    @JsonProperty("eggGroups")
     private List<String> eggGroups;
+    @JsonProperty("species")
     private String species;
+    @JsonProperty("height")
     private double height;
+    @JsonProperty("weight")
     private double weight;
+    @JsonProperty("description")
     private String description;
+    @JsonProperty("moves")
     private List<Move> moves;
 
     public static class Stats {
